@@ -10,8 +10,9 @@ public:
             if(nums[mid]==target){
                 return mid;
             }
-            //Left portion
+            //Checks if Left portion is sorted
             if(nums[low]<=nums[mid]){
+                //Checks if target is present in left portion
                 if(target>=nums[low] && target<=nums[mid]){
                     high=mid-1;
                 }else{
@@ -19,8 +20,9 @@ public:
                 }
             }
             else{
-            //Right portion 
+            //checks if Right portion is sorted
                 if(nums[mid]<=nums[high]){
+                    //Checks if target is present in right portion
                     if(target>=nums[mid] && target<=nums[high]){
                         low=mid+1;
                     }else{
