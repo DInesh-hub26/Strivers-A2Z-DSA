@@ -8,6 +8,14 @@ public:
         int mini=INT_MAX;
         while(low<=high){
             int mid=low+(high-low)/2;
+            //For Dupliactes we need to add
+            /*
+              if(nums[low]==nums[mid] && nums[mid]==nums[high]){
+                  low++;
+                  high--;
+                  continue;
+              }
+            */
             //search space is sorted 
             if(nums[low]<=nums[high]){
                 mini=min(nums[low],mini);
