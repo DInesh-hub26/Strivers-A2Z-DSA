@@ -3,6 +3,8 @@ public:
     int floorSqrt(int n)  {
       int low=0,high=n;
       int ans=0;
+      //Use sqrt function in large problems
+      //int ans=sqrt(n)
       while(low<=high){
           int mid=low+(high-low)/2;
           if(mid*mid <=n){
