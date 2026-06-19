@@ -27,6 +27,12 @@ public:
     }
     int smallestDivisor(vector<int>& nums, int threshold) {
         int n=nums.size();
+        /*
+        Min thresold value should be n to have answer
+        if(threshold<n){
+        return -1;
+        }
+        */
         int low=1;
         int high=FindMaxi(nums,n);
         int ans;
