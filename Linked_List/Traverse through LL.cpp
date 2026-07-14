@@ -33,8 +33,15 @@ int main(){
     }
     Node* head=ConvertArray2LL(arr,n);
     Node* temp=head;
+    //int count=0;
     while(temp!=nullptr){
         cout<<temp->data<<" ";
         temp=temp->next;
+        //count++;
     }
+    //return count;
+    //For Length of LL return count
 }
+/*
+  Time Complexity->O(n)
+*/
