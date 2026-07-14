@@ -21,10 +21,20 @@ Node* ConvertArray2LL(vector<int>&arr,int n){
         Mover->next=Temp;
         Mover=Temp;
     }
+    return Head;
 }
 
 int main(){
-    vector<int>arr={1,2,3,4};
-    Node* y=new Node(arr[0]);
-    cout<<y->data;
+    int n;
+    cin>>n;
+    vector<int>arr(n);
+    for(int i=0;i<n;i++){
+        cin>>arr[i];
+    }
+    Node* head=ConvertArray2LL(arr,n);
+    Node* temp=head;
+    while(temp!=nullptr){
+        cout<<temp->data<<" ";
+        temp=temp->next;
+    }
 }
